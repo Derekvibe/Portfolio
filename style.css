@@ -1,0 +1,492 @@
+:root{
+    --main-color:#fd8c02;
+    --black:#13131a;
+    --bg:#fff;
+    --border:.5rem solid rgba(150, 150, 150, .12);
+    --inter-color:rgb(255, 192, 203);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-slider-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+/* NAVIGATION */
+
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    border-bottom: var(--black) 2px solid;
+    background: pink;
+}
+
+nav .logo img{
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0px 5px;
+}
+
+nav ul li a{
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+}
+
+
+nav ul li a:hover,
+nav ul li a.active{
+    background: var(--black);
+    color: var(--bg);
+    border: .1rem solid var(--black);
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+}
+
+nav .menu-btn i{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+#click:checked ~ .menu-btn i::before{
+    content: "\f00d";
+}
+
+
+
+/* INTRODUCTION */
+.container{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    width: 100%;
+}
+.intro a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;    
+    border: .1rem solid var(--black);
+    padding: 1rem;
+    background: var(--black);
+    color: var(--bg);
+    font-weight:bolder;
+    border-radius: 10px;
+}
+
+.intro a:hover{
+    background: var(--main-color);
+    color: var(--bg);
+    border: .1rem solid var(--main-color);
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+}
+
+.intro h3 {
+    color: var(--main-color);
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.intro h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.intro p{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.intro img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* ABOUT ME */
+.about{
+    padding:30px;
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about a{
+    font-size: 14px;
+    color: var(--bg);
+    margin-left: 50%;
+    text-decoration: none;
+    font-weight:bolder;    
+}
+
+
+.about a:hover{
+    border: .1rem solid var(--black);
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+    color: var(--bg);
+    background: var(--main-color);
+}
+
+.about h4 {
+    color: var(--bg);
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.about p {
+    color: var(--bg);
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.about ul li{
+    color: var(--bg);
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/* MY SKILLS */
+
+.set{
+    padding-top: 20px;
+    width: 100%;
+    background: var(--inter-color);
+}
+
+.set  .skills a {
+    font-size: 14px;
+    color: var(--black);
+    margin-left: 50%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+
+.set .skills a:hover{
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+    color: var(--bg);
+    background: var(--main-color);
+}
+
+.skills-img {
+    padding-top: 20px;
+    display: flex;
+    margin-left: 18.5%;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+}
+
+.skills-img img{
+    width: 40%;    
+}
+
+.skills-img p{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
+/* MY WORKS */
+
+.Projects{
+    width: 100%;
+    background: var(--black);
+    padding-top: 20px;
+
+}
+
+.Projects .skills a{
+    font-size: 14px;
+    color: var(--bg);
+    margin-left: 50%;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+.Projects .skills a:hover{
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+    color: var(--bg);
+    background: var(--main-color);
+}
+
+.work-img {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.work-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+
+/* CONTACTS */
+
+.contact {
+    padding-top: 20px;
+}
+.contact h3 {
+    color: var(--bg);
+    font-size: 24px;
+    font-weight:bolder;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.contact span{
+    color: var(--main-color);
+}
+
+.socials {
+    display: flex;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+
+.socials a{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    margin-left: 20px;
+    border: 1px solid var(--bg);
+    background:var(--bg);
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    color: var(--black);
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.socials a img{
+    width: 10%;
+}
+
+.socials a:hover{
+    background: var(--main-color);
+    color: var(--bg);
+    border: .1rem solid var(--main-color);
+    padding: 1rem;
+    transition:all .5s ease;
+    border-radius: 10px;
+}
+
+/* footer */
+
+.mainFooter {
+    background: var(--black);
+    border-top: 2px solid var(--bg);
+    color: var(--bg);
+    align-items: center;
+    justify-content: center;
+}
+
+.mainFooter p {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.mainFooter .out {
+    color: var(--main-color);
+}
+
+.mainFooter .us {
+    display: flex;
+    padding-top: 10px;
+    margin-left: 35%;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+
+.mainFooter .us img {
+    width: 50px;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:940px){
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+    nav .menu-btn i:hover{
+        color: var(--main-color);
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: var(--black);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+    nav ul li{
+        margin: 40px 0;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active{
+    color: cyan;
+    }
+
+    .container{
+        margin-top: 12%;
+        width: 100%;
+    }
+
+
+ .skills-img img {
+     width:50%;
+
+ }
+
+ .work-img {
+    display: block;
+    box-sizing: border-box;
+    }
+
+    .work-img img {
+        width: 100%;
+        padding: 1% 5%;
+    }
+
+    .socials{
+        display: block;
+    }
+    .socials a{
+        width: 50%;
+        height: 50px;
+        display: flex;
+        border: 1px solid var(--bg);
+        background:var(--bg);
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 14px;
+        color: var(--black);
+        margin: auto;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .socials a img{
+        width: 7%;
+    }
+
+    .socials a:hover{
+        background: var(--main-color);
+        color: var(--bg);
+        border: .1rem solid var(--main-color);
+        padding: 1rem;
+        transition:all .5s ease;
+        border-radius: 10px;
+    }
+
+    .mainFooter {
+        background: var(--black);
+        border-top: 2px solid var(--bg);
+        color: var(--bg);
+    }
+
+    .mainFooter p {
+        font-size: 20px;
+    }
+
+    .mainFooter .us {
+        display: flex;
+        padding-top: 10px;
+        margin-left: 20%;
+    }
+
+
+    .mainFooter .us img {
+        width: 50px;
+        padding-left: 30px;
+        border-radius: 10%;
+    }
+
+
+
+}
