@@ -474,8 +474,12 @@ nav .menu-btn i{
         font-size: 20px;
     }
 
+    .mainFooter .us p {
+        text-align: center;
+    }
+
     .mainFooter .us {
-        display: flex;
+        display: block;
         padding-top: 10px;
         margin-left: 20%;
     }
